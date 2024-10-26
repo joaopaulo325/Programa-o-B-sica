@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <h1 id="titulo">Bem-vindo</h1>
+        <p>Aprenda os fundamentos básicos da programação.</p>
+        <button onclick="mudarTexto()">Mudar Título</button>
+        <button id="changeColorBtn">Mudar Cor de Fundo</button>
+        <button onclick="mostrarQuiz()">Iniciar Quiz</button>
+    </header>
+
+    <section>
+        <h2>Adicionar Anotações</h2>
+        <input type="text" id="itemInput" placeholder="Digite um item">
+        <button id="addItemBtn">Adicionar</button>
+        <ul id="itemList"></ul>
+    </section>
+
+    <section id="linguagens">
+        <h2>Linguagens de Programação e Seus Frameworks</h2>
+        <h3>Front End</h3>
+        <p>O Front End lida com a interface do usuário e a interação visual do lado do cliente. As principais linguagens e frameworks são:</p>
+        <ol>
+            <li><strong>JavaScript</strong>
+                <img src="java.jpg.png" alt="JavaScript" width="100">
+                <ul>
+                    <li><em>Descrição:</em> A linguagem dominante para o desenvolvimento frontend, usada para criar elementos interativos e dinâmicos nas páginas web.</li>
+                    <li><em>Principais Frameworks:</em>
+                        <ul>
+                            <li>React</li>
+                            <li>Vue.js</li>
+                            <li>Angular</li>
+                            <li>Svelte</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>TypeScript</strong>
+                <img src="ts.jpg.png" alt="TypeScript" width="100">
+                <ul>
+                    <li><em>Descrição:</em> Superset do JavaScript que adiciona tipagem estática, muito usado para projetos maiores.</li>
+                    <li><em>Principais Frameworks:</em>
+                        <ul>
+                            <li>React (com TypeScript)</li>
+                            <li>Angular</li>
+                            <li>Vue (com TypeScript)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>HTML & CSS</strong>
+                <img src="hc.jpg.jpg" alt="HTMLCSS" width="200">
+                <ul>
+                    <li><em>Descrição:</em> Embora não sejam linguagens de programação completas, HTML (para estrutura) e CSS (para estilos) são essenciais no frontend.</li>
+                    <li><em>Principais Frameworks:</em>
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>Tailwind CSS</li>
+                            <li>Foundation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Back End</h3>
+        <p>O Back End lida com a lógica de negócios, gerenciamento de banco de dados e comunicações entre servidores e clientes. As principais linguagens e frameworks são:</p>
+        <ol>
+            <li><strong>JavaScript (Node.js)</strong>
+                <img src="jen.jpg.png" alt="javaEnode" width="200">
+                <ul>
+                    <li><em>Descrição:</em> Usando Node.js, JavaScript também pode ser utilizado no backend.</li>
+                    <li><em>Principais Frameworks:</em>
+                        <ul>
+                            <li>Express.js</li>
+                            <li>NestJS</li>
+                            <li>Koa</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Python</strong>
+                <img src="py.jpg.png" alt="Python" width="100">
+                <ul>
+                    <li><em>Descrição:</em> Uma linguagem versátil muito popular em desenvolvimento backend.</li>
+                    <li><em>Principais Frameworks:</em>
+                        <ul>
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>FastAPI</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Java</strong>
+                <img src="jav.jpg.png" alt="Java" width="100">
+                <ul>
+                    <li><em>Descrição:</em> Uma das linguagens mais usadas no desenvolvimento de backend.</li>
+                    <li><em>Principais Frameworks:</em>
+                        <ul>
+                            <li>Spring Boot</li>
+                            <li>Micronaut</li>
+                            <li>JHipster</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section id="principais-linguagens">
+        <h2>Principais Linguagens de Programação em 2024</h2>
+        <p>As principais linguagens de programação em 2024 variam dependendo do uso específico (como desenvolvimento web, ciência de dados, inteligência artificial, sistemas embarcados, etc.), mas as mais populares e relevantes no mercado atualmente são:</p>
+        <ol>
+            <li>
+                <strong>Python</strong>
+                <img src="py.jpg.png" alt="Python" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Ciência de dados, inteligência artificial, machine learning, automação, desenvolvimento web (com frameworks como Django e Flask), e scripts.</li>
+                    <li><em>Vantagens:</em> Simplicidade, vasta biblioteca de pacotes, forte comunidade.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>JavaScript</strong>
+                <img src="java.jpg.png" alt="JavaScript" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento web (frontend e backend, especialmente com frameworks como Node.js, React, Angular e Vue).</li>
+                    <li><em>Vantagens:</em> Linguagem onipresente no desenvolvimento web, bom suporte para interfaces de usuário interativas.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Java</strong>
+                <img src="jav.jpg.png" alt="Java" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento de aplicativos empresariais, aplicações Android, e grandes sistemas backend.</li>
+                    <li><em>Vantagens:</em> Forte em sistemas robustos e escaláveis, alta performance e compatibilidade.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>C#</strong>
+                <img src="c.jpg.jpg" alt="C" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento de aplicativos Windows, jogos (especialmente com Unity), e plataformas da Microsoft.</li>
+                    <li><em>Vantagens:</em> Forte integração com o ecossistema Microsoft, ideal para jogos e desenvolvimento empresarial.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>C++</strong>
+                <img src="c++.png" alt="C++" width="70">
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento de sistemas de alto desempenho, jogos, engines gráficas, e sistemas embarcados.</li>
+                    <li><em>Vantagens:</em> Controle detalhado de memória, alta performance, usada em sistemas críticos e de tempo real.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Go (Golang)</strong>
+                <img src="go.jpg.png" alt="Go Golang" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Sistemas de backend, microserviços, aplicações de alto desempenho.</li>
+                    <li><em>Vantagens:</em> Simplicidade, eficiência em aplicativos concorrentes, popular em ambientes de infraestrutura e DevOps.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Rust</strong>
+                <img src="rust.jpg.png" alt="Rust" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Sistemas de baixo nível, segurança e alta performance, concorrência segura.</li>
+                    <li><em>Vantagens:</em> Segurança de memória e gerenciamento eficiente de recursos, crescendo em popularidade para substituir C/C++ em muitos casos.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Swift</strong>
+                <img src="sw.jpg.jpg" alt="Swift" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento de aplicativos iOS e macOS.</li>
+                    <li><em>Vantagens:</em> Alta performance para desenvolvimento Apple, sintaxe amigável.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Kotlin</strong>
+                <img src="ko.jpg.png" alt="Kotlin" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento de aplicativos Android.</li>
+                    <li><em>Vantagens:</em> Interoperável com Java, considerada mais moderna e eficiente para o ecossistema Android.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>SQL</strong>
+                <img src="sql.jpg.png" alt="SQL" width="100">
+                <ul>
+                    <li><em>Uso principal:</em> Bancos de dados e manipulação de dados.</li>
+                    <li><em>Vantagens:</em> Essencial para interação com bancos de dados relacionais, usada em praticamente todas as aplicações que lidam com dados.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>TypeScript</strong>
+                <img src="ts.jpg.png" alt="TypeScript" width="100">
+
+                <ul>
+                    <li><em>Uso principal:</em> Desenvolvimento web (frontend e backend), especialmente com grandes projetos JavaScript.</li>
+                    <li><em>Vantagens:</em> Tipagem estática e melhores ferramentas de desenvolvimento em comparação ao JavaScript puro.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+   
+    
+    <footer>
+        <div class="container">
+            <p>© 2024 Básico da Programação.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
